@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = 'pt-br'>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name='viewport' content='width=device-width, initial-scale= 1.0'>
+        <link rel = 'stylesheet' href = './style.css'>
+        <title>Desafio Covid</title>
+    </head>
+    <body>
+        <header>
+            <h1>Dados Covid</h1>
+        </header>
+        <main>
+            <section>
+                <div>
+                    <input  id='inputPaises' type="text" placeholder="Digite o nome de um pais"> 
+                    <button id='botao' onclick='pegarpais()'>Pesquisar</button>
+                </div>
+                <div id = 'infos-cabeçalho'>
+                    <h5 id='resultadoPaises'>Nome do País</h5>
+                    <h5 id='codigoPaises'>Código do País</h5>
+                    <h5 id='casosPaises'>Número de Casos</h5>
+                    <h5 id='atualizadoPaises'>Atualizado em</h5>
+                </div>
+            </section>
+            <section id ='menu' >
+                <div id='um'><h2>|Óbtos<div id='umb'><red></red></h2></div></div>
+                
+                <div id='dois'><h2>|Número de infectados atuais<div id='doisb'></h2></div></div>
+                
+                <div id='tres'><h2>|Número de recuperados<div id='tresb'></h2></div></div>
+                
+            </section>
+          
+        </main>
+        <footer>
+            <p><b>Criado por 
+            <a href="https://www.linkedin.com/in/paulo-negri-8a3baa1a8/" target="_blank">
+            <ins>Paulo Negri</b></ins></a>
+        </footer>
+        <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" ></script>
+        <script  defer src='./script.js'></script>
+    </body>
+</html>
