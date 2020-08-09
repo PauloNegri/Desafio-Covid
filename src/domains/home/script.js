@@ -28,11 +28,11 @@ async function findCountry() {
         const dateFormated = `${resolvedDay}/${month}/${year}`
         divUpdated.innerHTML = (`Atualizado em: ${dateFormated}`);
         const totalDeaths = lastData.Deaths;
-        divDeaths.innerHTML = (`|Óbitos ${totalDeaths}`);
+        divDeaths.innerHTML = (`Óbitos ${totalDeaths}`);
         const totalInfected = lastData.Active;
-        divInfected.innerHTML = (`|Número de infectados atuais ${totalInfected}`);
+        divInfected.innerHTML = (`Número de infectados atuais ${totalInfected}`);
         const totalRecovered = lastData.Recovered;
-        divRecovered.innerHTML =(`|Número de recuperados ${totalRecovered}`) ;
+        divRecovered.innerHTML =(`Número de recuperados ${totalRecovered}`) ;
          
         }catch(error){
             console.log('erro');
