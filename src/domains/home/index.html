@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = 'pt-br'>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name='viewport' content='width=device-width, initial-scale= 1.0'>
+        <link rel = 'stylesheet' href = './../../commom/styles/style.css'>
+        <title>Desafio Covid</title>
+    </head>
+    <body>
+        <header class>
+            <h1>DADOS COVID</h1>
+        </header>
+        <main>
+            <aside class= news>
+                <h4><b>Mais infos</b></h4>
+                <div><img src = './../../commom/img/imgNewsG1.png' width="120" height="90"><br>
+                        <a href='https://g1.globo.com/bemestar/coronavirus/' target="_blanc">
+                            <button>VER MAIS</button></a>
+                </div>
+                <div><img src = './../../commom/img/imgNewsTempo.jpg' width="120" height="90"><br>
+                    <a href='https://www.otempo.com.br/ultimas-noticias-sobre-o-coronavirus' target="_blanc">
+                        <button>VER MAIS</button></a>
+                </div>
+                <div><img src = './../../commom/img/imgNewsGov.png' width="120" height="90"><br>
+                    <a href='https://coronavirus.saude.gov.br/sobre-a-doenca' target="_blanc">
+                        <button>VER MAIS</button></a>
+                </div>
+            </aside>
+            <section >
+                <div>
+                    <input  id='inputCountry' type="text" placeholder="Digite o nome de um pais"> 
+                    <button onclick='findCountry()'>Pesquisar</button>
+                    <div id='hidden'>
+                        <blockquote><b>Esta página informa a respeito dos dados sobre o Corona Virus pelo mundo, escreva o nome do país que 
+                        deseja se informar mais na barra acima ou caso queira saber mais sobre a doença, noticias dela no Brazil
+                        ou no mundo, apenas clique em algum dos sites ao lado.</b></blockquote>
+                    </div>  
+                </div>
+            </section>
+            
+            <section class='global-container'>
+                  
+                <div class = 'informational-container'>
+                    <h2 id='countries'></h2>
+                    <h2 id='contryCode'></h2>
+                    <h2 id='numberCases'></h2>
+                    <h2 id='updatedCases'></h2>
+                </div>
+                <div class ='data-container' >
+                    <div><h2><div id='deathsUpdated'></div></h2></div>
+                    <div><h2><div id='infectedUpdated'></div></h2></div>
+                    <div><h2><div id='recoveredUpdated'></div></h2></div>
+                </div>   
+                
+            </section>
+          
+        </main>
+        <footer>
+            <p><b>Criado por 
+            <a href="https://www.linkedin.com/in/paulo-negri-8a3baa1a8/" target="_blank">
+            <ins>Paulo Negri</b></ins></a>
+        </footer>
+        <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" ></script>
+        <script  defer src='./script.js'></script>
+    </body>
+</html>
+

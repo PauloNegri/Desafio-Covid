@@ -1,0 +1,107 @@
+*{
+    font-family: Helvetica, sans-serif, arial ;   
+}
+
+.global-container{
+    margin-top: 15px;
+    display: flex;
+    flex-direction:row;
+    height:400px;
+}
+
+.informational-container{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding:100px;
+    width:500px;
+    margin-right: 5px;
+}
+
+.data-container{
+    display: flex;
+    flex-direction:column;
+    padding:100px;
+    width:500px
+}
+
+.news{
+   
+    float: right;
+    padding: 70px;
+    height: 400px;
+}
+
+aside div{
+    margin:7px;
+}
+
+#deathsUpdated{
+    color:red;
+}
+
+#infectedUpdated{
+    color:rgb(207, 125, 31);
+    margin-top:40px;
+}
+
+#recoveredUpdated{
+    color:rgb(8, 138, 8);
+    margin-top:40px;
+}
+
+input{
+    width:15%;
+    color: white;
+    background-color: rgb(10,10,10);
+    border: solid 2px white;
+    margin-top: 2px;
+    margin-left: 38%;
+}
+
+button{
+    background-color: rgb(30,30,30);
+    color: rgb(173, 173, 173);
+    font-weight: 600;
+    border: solid 2px rgb(31, 30, 30);
+    cursor: pointer; 
+}
+
+footer a{
+    color: black;
+    text-decoration:none;
+}
+
+h1{
+    color: rgb(173, 173, 173);
+    text-align: center;
+}
+
+footer{
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    height: 100%px;
+    text-align: center;
+    width: 100%;
+    color:black;
+}
+
+body{
+    background-image: url('./../img/imgBackground.jpg' );
+    background-repeat: no-repeat;
+    background-size: 100%;  
+}
+
+header{
+    background-image: url('./../img/imgHeader.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 8px;
+    border-radius: 4%;
+}
+
+blockquote{
+    color: black;
+    text-align: center;
+}
