@@ -3,63 +3,72 @@
 }
 
 .global-container{
-    margin-top: 15px;
+    margin-top: 5%;
     display: flex;
-    flex-direction:row;
-    height:400px;
+    flex-direction: row;
+    height:45%;
+    width:80%
 }
 
 .informational-container{
     color: white;
     display: flex;
     flex-direction: column;
-    padding:100px;
-    width:500px;
+    padding: 100px;
+    width: 500px;
     margin-right: 5px;
 }
 
 .data-container{
     display: flex;
-    flex-direction:column;
-    padding:100px;
-    width:500px
+    flex-direction: column;
+    padding: 100px;
+    width: 500px;
 }
 
 .news{
-    color:white;
+    color: white;
     float: right;
     padding: 70px;
     height: 400px;
 }
 
-aside div{
-    margin:7px;
+aside {
+    margin: 7px;
+    width: 10%;
+    height: 90%;
+    position: fixed;
+    top: 2%;
+    right: 0;
+    margin-right: 0;
 }
 
 #deathsUpdated{
-    color:red;
+    color: red;
     font-weight: 1000;
 }
 
 #infectedUpdated{
-    color:rgb(224, 145, 55);
-    margin-top:40px;
+    color: rgb(224, 145, 55);
+    margin-top: 5%;
     font-weight: 1000;
 }
 
 #recoveredUpdated{
-    color:rgb(33, 201, 33);
-    margin-top:40px;
+    color: rgb(33, 201, 33);
+    margin-top: 5%;
     font-weight: 1000;
 }
 
 input{
-    width:15%;
+    width: 15%;
     color: white;
     background-color: rgb(10,10,10);
     border: solid 2px white;
-    margin-top: 2px;
-    margin-left: 39%;
+    position: fixed;
+    top: 15%;
+    right: 60%;
+    left: 40%;
 }
 
 button{
@@ -68,11 +77,20 @@ button{
     font-weight: 600;
     border: solid 2px rgb(31, 30, 30);
     cursor: pointer; 
+    
+}
+
+section button{
+    position: fixed;
+    top: 15%;
+    right: 44%;
+    left: 56%;
+    margin-left: 0.3%;
 }
 
 footer a{
     color: white;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 h1{
@@ -84,23 +102,30 @@ footer{
     bottom: 0;
     left: 0;
     position: fixed;
-    height: 100%px;
+    height: 10%;
     text-align: center;
     width: 100%;
-    color:white;
+    color: white;
 }
 
 body{
     background-image: url('./../img/imgBackground.jpg' );
     background-repeat: no-repeat;
     background-size: 100%;  
+    background-size: cover;
+    background-position-x: center;
 }
 
 header{
     background-image: url('./../img/imgHeader.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 8px;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
     border-radius: 4%;
 }
 
@@ -110,4 +135,75 @@ h1{
 blockquote{
     color: white;
     text-align: center;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 17%;
 }
+
+@media screen and (max-width: 767px) {
+    input{
+        width: 37%;
+        position: fixed;
+        margin-top: 3%;;
+        top: 11%;
+        left: 2%;  
+    }
+    section button{
+        position: fixed;
+        margin-top: 3%;
+        top: 11%;
+        left: 41%;
+        margin-left: 0.5%;
+    }
+    aside{
+        position: fixed;
+        right: 0;
+        margin: 0;
+        width: 10%;
+    }
+    aside img{
+        margin-top: 10%;
+        
+    }
+    aside button{
+        position: fixed;
+        margin: 2px;
+    }
+    blockquote{
+        position: fixed;
+        margin-top: 5%;
+        top: 14%;
+        right: 20%;
+    }
+    aside button{
+        margin:0.001% 0;
+    }
+    .global-container{
+        margin-top: 28%;
+        margin-left: 2%;
+        height:45%;
+        width:80%
+    }
+    .informational-container{
+        padding: 10px;
+        width: 15%;
+        margin-right: 10%;
+        margin-top:
+    }
+    .data-container{
+        padding: 10px;
+        margin-left: 10%;
+        width: 15%;
+    }
+    body{
+        background-size: inherit;
+    }
+    footer{
+        position: fixed;
+        bottom: 10%;
+        left: 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
