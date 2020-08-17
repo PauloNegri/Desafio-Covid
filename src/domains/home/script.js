@@ -38,7 +38,6 @@ async function findCountry() {
             console.log('erro');
         }
         start();
-        translate();
     }
 
     function start(){
